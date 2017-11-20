@@ -22,12 +22,12 @@ public class Boletin96 {
         int numTotal = 0, numMas = 0, numMenos = 0, soldo;
         do {
             soldo = sc.nextInt();
-            if (soldo > 0) {
+            if (soldo >= 0) {
                 numTotal++;
                 if (soldo >= 1000 && soldo <= 1750) {
                     numMas++;
                 } else {
-                    if (soldo < 1000) {
+                    if (soldo < 1000&&soldo!=0) {
                         numMenos++;
                     }
                 }
